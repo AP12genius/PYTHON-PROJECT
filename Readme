@@ -1,0 +1,128 @@
+# 🚢 Titanic Survival Prediction
+
+A complete Data Science project implementing the full ML pipeline: **Data Loading → EDA → Cleaning → Visualization → Feature Engineering → Model Building → Evaluation**
+
+## 📋 Project Overview
+
+This project analyzes the Titanic dataset and builds a machine learning model to predict passenger survival using **Logistic Regression**. Achieves ~80% accuracy.
+
+## 🎯 Objectives
+
+- Understand the complete data science workflow
+- Apply data preprocessing and feature engineering techniques
+- Build and evaluate a classification model
+- Visualize insights from the data
+
+## 🛠️ Technologies Used
+
+- **Python 3.10+**
+- **Libraries**: pandas, numpy, matplotlib, seaborn, scikit-learn
+
+## 📂 Project Structure
+
+```
+titanic-survival-prediction/
+│
+├── Titanic_Survival_Prediction.ipynb   # Main Jupyter notebook
+├── README.md                             # Project documentation
+└── requirements.txt                      # Python dependencies
+```
+
+## 🚀 How to Run
+
+### Option 1: Google Colab (Recommended - No Setup Required)
+
+1. Go to [Google Colab](https://colab.research.google.com)
+2. File → Upload notebook → select `Titanic_Survival_Prediction.ipynb`
+3. Runtime → Run all (`Ctrl+F9`)
+
+### Option 2: Local Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/titanic-survival-prediction.git
+cd titanic-survival-prediction
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch Jupyter Notebook
+jupyter notebook Titanic_Survival_Prediction.ipynb
+```
+
+## 📊 What's Inside
+
+| Step | Description |
+|------|-------------|
+| **0** | Import all required libraries |
+| **1** | Load Titanic dataset from web (no manual download) |
+| **2** | Exploratory Data Analysis (EDA) - shape, missing values, survival rate |
+| **3** | Data Cleaning - handle nulls, drop irrelevant columns, encode categories |
+| **4** | Data Visualization - 6 charts (survival by gender, class, age, fare, heatmap) |
+| **5** | Feature Engineering - create FamilySize and IsAlone features |
+| **6** | Model Building - Logistic Regression with 80/20 split |
+| **7** | Evaluation - Accuracy, Confusion Matrix, Classification Report, Feature Importance |
+| **8** | Custom Prediction - Test with your own passenger data |
+
+## 📈 Results
+
+- **Accuracy**: ~80%
+- **Key Insights**:
+  - Women had significantly higher survival rates than men
+  - 1st class passengers had better survival odds
+  - Children were more likely to survive
+  - Higher fares correlated with survival
+  - Travelling alone reduced survival chances
+
+## 🔍 Features Used
+
+- Pclass (Passenger Class)
+- Sex
+- Age
+- Fare
+- FamilySize (engineered)
+- IsAlone (engineered)
+- Embarked (port of embarkation)
+
+## 📝 Key Learnings
+
+- Data preprocessing and handling missing values
+- Feature engineering to create meaningful predictors
+- Data visualization for insights
+- Building and evaluating classification models
+- Interpreting model coefficients
+
+## 🎓 Academic Context
+
+This project was created as part of a Data Science course assignment, demonstrating:
+- Complete data science pipeline implementation
+- Professional code documentation
+- Real-world dataset analysis
+
+## 🔮 Future Improvements
+
+- [ ] Try ensemble models (Random Forest, XGBoost)
+- [ ] Extract titles from names (Mr., Mrs., Miss.)
+- [ ] Hyperparameter tuning with GridSearchCV
+- [ ] Handle class imbalance with SMOTE
+- [ ] Cross-validation for robust evaluation
+
+## 📄 License
+
+This project is open source and available for educational purposes.
+
+## 👤 Author
+
+**Ayush**
+- Computer Science Student, India
+- Preparing for product-based company placements
+- Tech Stack: Java, Spring Boot, React, Python
+
+## 🙏 Acknowledgments
+
+- Dataset: [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic)
+- Inspired by classic data science tutorials and best practices
+
+---
+
+⭐ Star this repo if you found it helpful!
